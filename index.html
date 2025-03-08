@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang=pt-BR>
+<head>
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width, initial-scale=1.0">
+<title>Concessionária Premium</title>
+<link rel=stylesheet href=styles.css>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel=stylesheet>
+</head>
+<body>
+<header>
+<div class=logo>
+<img src=imagens/LOG4.png alt="Logo Concessionária">
+</div>
+<nav>
+<ul>
+<li><a href=#inicio class=nav-link>Início</a></li>
+<li><a href=#carros class=nav-link>Carros</a></li>
+<li><a href=#sobre class=nav-link>Sobre Nós</a></li>
+<li><a href=#cadastro class=nav-link>Cadastro</a></li>
+<li><a href=#endereco class=nav-link>Endereço</a></li>
+</ul>
+</nav>
+</header>
+<section id=inicio class="section inicio">
+<div class=overlay></div>
+<div class=content>
+<h1>Concessionária <span>CONCEPTOR</span></h1>
+<p>Os melhores carros estão aqui. Encontre o seu!</p>
+<a href=#carros class=btn>Ver Carros</a>
+</div>
+</section>
+<section id=carros class="section carros">
+<div class=overlay></div>
+<div class=content>
+<h2>Nossos Carros</h2>
+<div class=car-grid>
+<div class=car-item data-car-id=1>
+<img src=imagens/1.png alt="Carro 1">
+<h3>PORCHE</h3>
+<p>O 911 é um carro desportivo potente e empolgante, adequado para o uso diário.</p>
+</div>
+<div class=car-item data-car-id=2>
+<img src=imagens/3.png alt="Carro 2">
+<h3>LAMBORGHINI</h3>
+<p>Descrição breve do carro.</p>
+</div>
+<div class=car-item data-car-id=3>
+<img src=imagens/4.png alt="Carro 3">
+<h3>BUGATTI</h3>
+<p>Descrição breve do carro.</p>
+</div>
+<div class=car-item data-car-id=4>
+<img src=imagens/6.png alt="Carro 4">
+<h3>MUSTANG</h3>
+<p>Descrição breve do carro.</p>
+</div>
+<div class=car-item data-car-id=5>
+<img src=imagens/5.png alt="Carro 5">
+<h3>RAM</h3>
+<p>Descrição breve do carro.</p>
+</div>
+<div class=car-item data-car-id=6>
+<img src=imagens/2.png alt="Carro 6">
+<h3>FERRARI</h3>
+<p>Descrição breve do carro.</p>
+</div>
+</div>
+</div>
+</section>
+<section id=detalhes-carro class="section detalhes-carro">
+<div class=overlay></div>
+<div class=content>
+<h2>Detalhes do Carro</h2>
+<div class=car-details>
+<img src alt="Carro Selecionado" id=car-detail-image>
+<h3 id=car-detail-name></h3>
+<p id=car-detail-description></p>
+<p><strong>Preço:</strong> <span id=car-detail-price></span></p>
+<p><strong>Ano:</strong> <span id=car-detail-year></span></p>
+<p><strong>KM:</strong> <span id=car-detail-km></span></p>
+<a href=#carros class=btn>Voltar para Carros</a>
+</div>
+</div>
+</section>
+<section id=sobre class="section sobre">
+<div class=overlay></div>
+<div class=content>
+<h2>Sobre Nós</h2>
+<p>Somos uma concessionária líder no mercado, oferecendo os melhores veículos com qualidade e segurança.</p>
+</div>
+</section>
+<section id=cadastro class="section cadastro">
+<div class=overlay></div>
+<div class=content>
+<h2>Cadastro de Clientes</h2>
+<form id=cadastroForm>
+<div class=form-group>
+<label for=nome>Nome:</label>
+<input type=text id=nome name=nome required>
+</div>
+<div class=form-group>
+<label for=email>Email:</label>
+<input type=email id=email name=email required>
+</div>
+<div class=form-group>
+<label for=telefone>Telefone:</label>
+<input type=tel id=telefone name=telefone required>
+</div>
+<button type=submit class=btn>Cadastrar</button>
+</form>
+</div>
+</section>
+<section id=endereco class="section endereco">
+<div class=overlay></div>
+<div class=content>
+<h2>Endereço</h2>
+<p>Rua Exemplo, 123 - Cidade - Estado</p>
+<div class=map>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.075426745292!2d-46.653426584407!3d-23.565734367638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1629999999999!5m2!1spt-BR!2sbr" allowfullscreen loading=lazy></iframe>
+</div>
+</div>
+</section>
+<footer>
+<p>&copy; 2023 Concessionária CONCEPTOR. Todos os direitos reservados.</p>
+</footer>
+<script src=script.js></script>
+</body>
+</html>
